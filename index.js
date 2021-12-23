@@ -77,7 +77,22 @@ window.onload = () => {
             document.querySelector(".share").classList.remove("hidden");
         }
         predict_btn.innerHTML = "Хочу другое предсказание";
-
+        a2a_config.templates.vk = {
+            title: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
+            text: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
+        };
+        a2a_config.templates.whatsapp = {
+            title: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
+            text: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
+        };
+        a2a_config.templates.facebook = {
+            title: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
+            text: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
+        };
+        a2a_config.templates.ok = {
+            title: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
+            text: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
+        };
         document.body.style.background = bg;
     }
 
@@ -93,4 +108,6 @@ window.onload = () => {
     }
     console.log(document.URL, goBack(document.URL));
     back_btn.href = goBack(document.URL)
+
+
 };
