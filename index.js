@@ -64,8 +64,10 @@ window.onload = () => {
         }
     }
     imagePreload("web_1.jpg", "web_2.jpg");
-
+    let string = "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + "Я получил предсказание на 2022 от ${link}. Получи и ты!"
+    console.log(string);
     function predict() {
+        
         let rand;
         do {
             rand = Math.floor(Math.random() * predictions.length);
@@ -78,21 +80,21 @@ window.onload = () => {
         }
         predict_btn.innerHTML = "Хочу другое предсказание";
         a2a_config.templates.vk = {
-            title: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
-            text: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
+            title: "Я получил предсказание на 2022 от ${link}. Получи и ты!\n" + "\n" + `${predictions[rand]}`,
+            text: "Я получил предсказание на 2022 от ${link}. Получи и ты!\n" + "\n" + `${predictions[rand]}`,
         };
         a2a_config.templates.whatsapp = {
-            title: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
-            text: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
+            title: "Я получил предсказание на 2022 от ${link}. Получи и ты!\n" + "\n" + `${predictions[rand]}`,
+            text: "Я получил предсказание на 2022 от ${link}. Получи и ты!\n" + "\n" + `${predictions[rand]}`,
         };
         a2a_config.templates.facebook = {
-            title: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
-            text: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
-            quote: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`
+            title: "Я получил предсказание на 2022 от ${link}. Получи и ты!\n" + "\n" + `${predictions[rand]}`,
+            text: "Я получил предсказание на 2022 от ${link}. Получи и ты!\n" + "\n" + `${predictions[rand]}`,
+            quote: "Я получил предсказание на 2022 от ${link}. Получи и ты!\n" + "\n" + `${predictions[rand]}`
         };
         a2a_config.templates.odnoklassniki = {
-            title: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
-            text: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
+            title: "Я получил предсказание на 2022 от ${link}. Получи и ты!\n" + "\n" + `${predictions[rand]}`,
+            text: "Я получил предсказание на 2022 от ${link}. Получи и ты!\n" + "\n" + `${predictions[rand]}`,
         };
         document.body.style.background = bg;
     }
