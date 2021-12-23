@@ -88,8 +88,9 @@ window.onload = () => {
         a2a_config.templates.facebook = {
             title: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
             text: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
+            quote: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`
         };
-        a2a_config.templates.ok = {
+        a2a_config.templates.odnoklassniki = {
             title: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
             text: "Я получил предсказание на 2022 от ${link}. Получи и ты!" + "\n" + `${predictions[rand]}`,
         };
