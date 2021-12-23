@@ -34,7 +34,7 @@ body {
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    background: url(web_1.jpg) center / cover no-repeat;
+    background: url(./pictures/web_1.jpg) center / cover no-repeat;
 }
 #main {
     padding-top: 8vmax;
