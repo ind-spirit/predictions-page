@@ -25,7 +25,20 @@ html {
     margin: 0;
     border: 0;
 }
-
+.img-logo {
+    position: absolute;
+    width: 40vmin;
+    height: 5vmin;
+    object-fit: contain;
+    margin-top: 3vh;
+}
+.img-disclaimer {
+    position: absolute;
+    margin-top: 94vh;
+    width: 60vw;
+    height: 4vmin;
+    object-fit: contain;
+}
 body {
     color: white;
     height: 100vh;
@@ -37,7 +50,7 @@ body {
     background: url(./pictures/web_1.jpg) center / cover no-repeat;
 }
 #main {
-    padding-top: 8vmax;
+    padding-top: 20vh;
     width: 70%;
     height: 100%;
     display: flex;
@@ -53,7 +66,7 @@ header {
 }
 
 .btn {
-    margin-top: 3vmax;
+    margin-top: 2.2vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +81,7 @@ header {
     font-size: 2.1rem;
 }
 .back-btn {
-    margin-top: 2vmax;
+    margin-top: 2vh;
     border-radius: 2rem;
     cursor: pointer;
     /* border: 2px solid black; */
@@ -115,7 +128,7 @@ header {
         background: var(--phoneBG);
     }
     #main {
-        padding-top: 30vmin;
+        padding-top: 26vh;
     }
     .share span {
         width: 25px !important;
